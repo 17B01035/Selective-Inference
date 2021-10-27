@@ -28,7 +28,7 @@ def residuals(x, z, sigma):
         epsilon.append(e_hat[i] / math.sqrt(1 - h[i]))
     return (beta_LS,epsilon)
 
-# epsilonのブートストラップ
+# bootstrap of epsilon
 def scaleboot(x, n):
     l = np.array([0.0] * n)
     for i in range(n):
